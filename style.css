@@ -1,0 +1,167 @@
+/* Typography imported from Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Source+Sans+Pro:200,400');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+p, a {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Generic styles */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  background-color: #28989e;
+  text-decoration: none;
+  color: black;
+  border-radius: .25rem;
+  text-align: center;
+  display: inline-block;
+  transition: all .3s;
+}
+
+a:hover {
+  opacity: .6;
+}
+
+/* Styles for the banner image */
+.banner {
+  /* Photo by mnm.all on Unsplash */
+  background: url('images/arduino-logo.jpg') center;
+  background-size: cover;
+  padding: 4rem 2rem;
+  /* grid styles */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+}
+
+.banner > * {
+  color: black;
+}
+
+.banner > h1 {
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+
+.banner > article > p {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+.banner > article > a {
+  padding: 1rem;
+  margin-top: .75rem;
+}
+
+/* tarjeta styles */
+.tarjeta {
+  padding: 2rem;
+}
+
+.tarjeta > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.tarjeta > ul > li {
+  border: 1px solid #E2E2E2;
+  border-radius: .5rem;
+  list-style-type: none;
+}
+
+.tarjeta > ul > li > figure {
+  min-height: 220px;
+
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  position: relative;
+}
+
+.tarjeta > ul > li > figure > img {
+  width: 80%;
+}
+
+.tarjeta > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.tarjeta > ul > li > figure > figcaption > h3 {
+  color: black;
+  padding: .75rem;
+  font-size: 1.25rem;
+} 
+
+.tarjeta > ul > li > h3 {
+  color: black;
+  padding: .75rem;
+  font-size: 1.25rem;
+}
+
+.tarjeta > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem .75rem;
+  color: #666666;
+}
+
+.tarjeta > ul > li > a {
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+/* footer */
+footer {
+  background-color: #333;
+  padding: .75rem;
+  color: white;
+  text-align: center;
+  font-size: .75rem;
+}
+
+/* menu styles */
+#menu {
+
+  list-style: none;
+  border: thin solid #00b4f7;
+  padding: 0;
+  background-color: #0082d6;
+  padding: 5px;
+}
+
+#menu > li {
+    border: thin solid #0090eb;
+    display: inline-grid;
+}
+
+#menu > li:first-child  {
+  background-color: #009df3;
+
+}
+
+#menu > li > a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+
+}
+
+#menu > li:hover {
+  background-color: #005891;
+}
+
+@media only screen and (max-width: 768px) {
+  #menu > li {
+      width: 100%;
+  }
+}
